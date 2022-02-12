@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styleSheet.css">
+    	<script src="index.js"></script>
+		<title>Nommies</title>
+	</head>
+	<body>
+		<button id="createButton" type="button" onclick="launchCreateModal()">Create a Game</button>
+		<!-- The Modal -->
+		<div id="createGameModal" class="modal">
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span class="close" onclick="closeModal()">&times;</span>
+			<form>
+				<label for="name">Enter your name:</label><br>
+				<input type="text" id="nameCGM" name="name" hint="Name"><br>
+				<br>
+				<input type="button" value="Submit" onClick="createGame()">
+			</form>
+		  </div>
+		</div>
+
+		<button id="joinButton" type="button" onclick="launchJoinModal()">Join a Game</button>
+		<!-- The Modal -->
+		<div id="joinGameModal" class="modal">
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span class="close" onclick="closeModal()">&times;</span>
+			<form>
+				<label for="name">Enter the game ID:</label><br>
+				<input type="text" id="gameID" name="gameID" hint="ID"><br>
+				<label for="name">Enter your name:</label><br>
+				<input type="text" id="nameJGM" name="name" hint="Name"><br>
+				<br>
+				<input type="button" value="Submit" onClick="joinGame()">
+			</form>
+		  </div>
+		</div>
+
+	</body>
+</html>

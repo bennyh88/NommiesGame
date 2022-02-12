@@ -1,0 +1,145 @@
+body {
+    font-family: "Tahoma", "Arial", courier;
+    font-size: 16pt;
+    color: #A7D129;
+    background-color: #616F39;
+    text-align: center;
+}
+h2 {
+    font-size: 24pt;
+    padding: 5px;
+}
+h3 {
+    font-size: 20pt;
+    padding: 5px;
+}
+.area {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.leftColumn {
+    flex-direction: column;
+    padding: 14px;
+    width: 100%;
+}
+.opponentRow {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    align-content: space-between;
+    justify-content: center
+}
+.opponent {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 120px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.pitch {
+    border: 2px solid #3E432E;
+    padding: 5px;
+}
+.playArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+.playerRow {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+.playerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    padding: 14px;
+    width: 20%;
+    height: auto;
+}
+.playerHand {
+
+}
+.playerName {
+    font-size: 20pt;
+    padding: 5px;
+    border: 2px solid;
+    border-color: yellow;
+}
+.playerTricksToWin {
+    padding: 5px;
+}
+.trumpSuit {
+    padding: 5px;
+}
+
+.rightColumn {
+
+}
+
+table  { margin: 10px; border-collapse: collapse; width: 100%; }
+
+th, td { padding: 2px 2px; text-align: center;}
+th     { background:#3E432E; }
+
+.title { background-color: #3E432E; border: 1px solid black }
+.call  { border: 1px solid black }
+.score { background-color: #49542b; border: 1px solid black }
+
+.scoreTableDiv {
+    padding: 14px;
+}
+.trumpSuitPip {
+    font-size: 36pt;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #616F39;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

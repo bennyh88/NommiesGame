@@ -1,0 +1,52 @@
+img.card {
+	width: 100px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: initial;
+	box-sizing: initial;
+}
+
+/*
+ * A hand is a div containing cards.
+ */
+.hand {
+	padding: 0;
+	margin: 0;
+}
+.active-hand img.card {
+	cursor: pointer;
+}
+
+/*
+ * A horizontal hand, class="hand hhand".  The enitire card is visible.
+ */
+.hhand {
+	display: inline-block;
+}
+.hhand img.card {
+	padding-top: 10px;
+}
+.hhand.active-hand img.card:hover {
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+/*
+ * A compact horizontal hand.  Only the last card is entirely visible.
+ */
+.hhand-compact {
+	display: inline-block;
+}
+.hhand-compact img.card:first-child {
+	margin-left: 0px;
+	padding-top: 10px;
+}
+.hhand-compact img.card {
+	margin-left: -52px;
+	padding-top: 10px;
+}
+.hhand-compact.active-hand img.card:hover {
+	padding-top: 0px;
+	padding-bottom: 10px;
+}

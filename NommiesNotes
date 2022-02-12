@@ -1,0 +1,111 @@
+Nommies game
+
+TODO List:
+1. add in trump calling JS, re use the modal for trump calling.
+2. add in opponent row cards as they are played.
+3. add a more visual way to decide who calls trump when multiple highest calls
+4. scoreboard
+5. update trump suit in the corner.
+6. could add indication for what stage the game is at.
+7. function to handle the round logic.
+8. strip out info for other players from JSON.
+9. commonfunctions.php deal with illegal moves. rejecting first in the JS.
+10. reject illegal moves in nommies.js.
+11. add in nommies.js moveAllowed() add logic to check move
+
+
+
+DB user = nommies
+pass = Nommies123
+
+Database
+gameID
+	playerNo
+	playerName
+
+
+	turn
+	dealer
+	score
+	trump card
+
+game object
+	game id
+	players[] {player1, player2, player3, etc}
+	game state
+		hand, turn, dealer, trump card
+	score
+
+
+player object
+	playerID: unique unguessable id
+	playerName:
+	playerURL:
+
+
+Game Stages
+Dealer p1
+p2 calls tricks to win
+p3 calls tricks to win
+p4 calls tricks to win
+p1 calls tricks to win
+Trump suit chosen
+p2 lays
+p3 lays
+p4 lays
+p1 lays
+winner chosen
+tricks won is noted
+p1 deals
+trick winner calls first
+trick winner
+
+Home page / Lobby
+	create game
+		Enter your name
+		player become player 1 and is the host
+		needs 2 players to start.
+		Once start game is pressed  o new players can join
+
+	join game
+		enter a unique game ID
+		Enter your name
+
+	Goes to a Lobby screen
+		P1 can edit / modify game rules. i.e number of hands? or just make this set and fixed from the off
+		start listing the player names as they join the game.
+
+		P1 gets start button to start the game.
+	OR  everyone gets a start button? once all click start, game is locked in?
+
+Lobby page
+	essential:
+		way to create game.
+		way to join game.
+		match ID displayed.
+		list of players in match.
+		start button.
+
+	Nice to have:
+		ways to modify rules
+		chat box.
+
+
+Game running page
+	essential:
+		representation of your hand
+		interface to input your call
+		something to indicate whos turn it is
+		something to indicate trump suit
+		something to indicate the cards in the hand
+		a way to shuffle the deck (maybe a random seed, like a number or click of a mouse and no. of millis?)
+		a way to play the cards in your hand
+
+	Nice to have:
+		chat box
+
+
+Javascript file
+	deal with updating the page with ajax
+	animations
+	sending requests to the server
